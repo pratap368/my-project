@@ -36,6 +36,6 @@ app.delete("/deletedata",async (req,res)=>{
     res.send(item);
 })
 const PORT =5000;
-app.listen(PORT,()=>{
+app.listen(PORT,'0.0.0.0',()=>{
     console.log(`Server started at ${PORT}`);
 })
