@@ -38,6 +38,9 @@ app.delete("/deletedata",async (req,res)=>{
 app.get('/', (req, res) => {
     res.status(200).send('Hello, World!');
 });
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
+});
 const PORT =5000;
 app.listen(PORT,'0.0.0.0',()=>{
     console.log(`Server started at ${PORT}`);
