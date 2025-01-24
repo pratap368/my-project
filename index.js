@@ -4,7 +4,7 @@ const app=express();
 const mongoose=require("mongoose")
 app.use(bodyParser.json())
 
-mongoose.connect('mongodb://admin:livoncomfort@34.47.178.182:27017/test?authSource=admin');
+mongoose.connect('mongodb://admin:livoncomfort@34.47.154.49:27017/test?authSource=admin');
 
 const tableschema=new mongoose.Schema({
     name:String,
