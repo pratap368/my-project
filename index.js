@@ -35,6 +35,9 @@ app.delete("/deletedata",async (req,res)=>{
     const item=await user.findByIdAndDelete(req.query.id);
     res.send(item);
 })
+app.get('/', (req, res) => {
+    res.status(200).send('Hello, World!');
+});
 const PORT =5000;
 app.listen(PORT,'0.0.0.0',()=>{
     console.log(`Server started at ${PORT}`);
